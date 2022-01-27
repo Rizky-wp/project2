@@ -57,16 +57,16 @@
 
     <!-- footer section -->
 
-    <footer class="footer border-top ">
-        <div class="container-fluid px-5">
-            <div class="row  py-4 mt-2 justify-content-between align-items-center">
+    <footer class="footer border-top mb-0 pb-0">
+        <div class="container-fluid px-5 ">
+            <div class="row row-cols-1 row-cols-lg-2 py-4 mt-2 justify-content-between align-items-center">
                 <div class="col col-lg-6 col-md-6 col-sm-3 mb-3">
                     <div class="row">
                         <span class="fs-2">Pengarsipan Buku Tanah Kantor Pertanahan kota Tasikmalaya</span>
                     </div>
-                    <div class="row">
+                    <div class="row ">
                         <a class="" href="#">
-                            <img src="/img/brand.png" alt="Kementrian Agraria dan Tata Ruang / Badan Pertanahan Nasional" height="100">
+                            <img src="/img/brand.png" alt="Kementrian Agraria dan Tata Ruang / Badan Pertanahan Nasional" style="max-width: 100%;">
 
                         </a>
                     </div>
@@ -93,7 +93,7 @@
 
             </div>
 
-            <div class="row justify-content-center my-3">
+            <div class="row justify-content-center mt-3 py-3">
                 <span class="text-center" style="color: white;">Copyright © 2022 Badan Pertanahan Nasional- All right reserved</span>
             </div>
         </div>
