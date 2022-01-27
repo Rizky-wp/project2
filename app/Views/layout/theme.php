@@ -16,7 +16,7 @@
 
 <body>
     <!-- navbar section -->
-    <nav class="navbar navbar-expand-lg  ">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="/img/brand.png" alt="Kementrian Agraria dan Tata Ruang / Badan Pertanahan Nasional" height="100">
@@ -67,7 +67,7 @@
     <footer class="footer border-top mb-0 pb-0">
         <div class="container-fluid px-5 ">
             <div class="row row-cols-1 row-cols-lg-2 py-4 mt-2 justify-content-between align-items-center">
-                <div class="col col-lg-6 col-md-6 col-sm-3 mb-3">
+                <div class="col col-lg-6 col-md-6 col-sm-5 mb-3">
                     <div class="row">
                         <span class="fs-2">Pengarsipan Buku Tanah Kantor Pertanahan kota Tasikmalaya</span>
                     </div>
@@ -81,18 +81,18 @@
 
 
 
-                <div class="col col-lg-3 col-md-4 col-sm-1">
+                <div class="col col-lg-4 col-md-5 col-sm-5">
 
                     <ul class="nav flex-column fs-6 text-break">
-                        <li class="nav-item mb-1"><a class="nav-link p-0 ">Alamat:<br>
+                        <li class="nav-item mb-2"><a class="nav-link p-0 ">Alamat:<br>
                                 Jl. Boulevard No.1, Sukamanah,Kec.Cipedes<br>
                                 Kota Tasikmalaya</a></li>
-                        <li class="nav-item mb-1"><a class="nav-link p-0 ">Jam Kerja:<br>
+                        <li class="nav-item mb-2"><a class="nav-link p-0 ">Jam Kerja:<br>
                                 Senin – Jum’at<br>
                                 08.00 – 16.00</a></li>
-                        <li class="nav-item mb-1"><a class="nav-link p-0 ">Email:<br>
+                        <li class="nav-item mb-2"><a class="nav-link p-0 ">Email:<br>
                                 Pengarsipanbukutanahtasikmalaya@yahoo.com</a></li>
-                        <li class="nav-item mb-1"><a class="nav-link p-0 ">Hubungi Kami:<br>
+                        <li class="nav-item mb-2"><a class="nav-link p-0 ">Hubungi Kami:<br>
                                 021-29653300</a></li>
                     </ul>
                 </div>
@@ -100,7 +100,7 @@
 
             </div>
 
-            <div class="row justify-content-center mt-3 py-3">
+            <div class="row justify-content-center  py-3">
                 <span class="text-center" style="color: white;">Copyright © 2022 Badan Pertanahan Nasional- All right reserved</span>
             </div>
         </div>

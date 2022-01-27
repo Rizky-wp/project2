@@ -15,10 +15,7 @@ body{
     color: #FEC32F ;
     
 }
-.nav-link:focus{
-    color: #FEC32F ;
-    
-}
+
 .nav-link:hover{
     color: #ffffff ;
 }
