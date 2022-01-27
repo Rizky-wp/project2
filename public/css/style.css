@@ -1,0 +1,23 @@
+/* navbar section */
+.navbar{
+    background: #003E69;
+    
+}
+.nav-link{
+    color: #FEC32F ;
+    
+}
+.nav-link:hover{
+    color: #ffffff ;
+}
+/* end navbar section */
+/* footer section */
+.footer{
+    background: #003E69;
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    
+    
+    color: #FEC32F;
+}
+/* end footer section */
