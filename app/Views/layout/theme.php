@@ -28,13 +28,19 @@
             <div class="collapse navbar-collapse justify-content-end fs-4" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item mx-2">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link <?php if ($nav == "home") {
+                                                echo "active";
+                                            }  ?> " href="#">Home</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link" href="#">Informasi</a>
+                        <a class="nav-link <?php if ($nav == "informasi") {
+                                                echo "active";
+                                            }  ?>" href="#">Informasi</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link" href="#">Kontak</a>
+                        <a class="nav-link <?php if ($nav == "kontak") {
+                                                echo "active";
+                                            }  ?>" href="#">Kontak</a>
                     </li>
                     <li class="nav-item mx-2">
                         <a href="" class="nav-link">Login</a>
@@ -45,9 +51,13 @@
     </nav>
     <!-- end navbar section -->
 
+    <!-- content section -->
+    <?= $this->renderSection('content'); ?>
+    <!-- end content section -->
+
     <!-- footer section -->
 
-    <footer class="footer border-top fixed-bottom">
+    <footer class="footer border-top ">
         <div class="container-fluid px-5">
             <div class="row  py-4 mt-2 justify-content-between align-items-center">
                 <div class="col col-lg-6 col-md-6 col-sm-3 mb-3">
@@ -84,7 +94,7 @@
             </div>
 
             <div class="row justify-content-center my-3">
-                <span class="text-center">Copyright © 2022 Badan Pertanahan Nasional- All right reserved</span>
+                <span class="text-center" style="color: white;">Copyright © 2022 Badan Pertanahan Nasional- All right reserved</span>
             </div>
         </div>
 
