@@ -32,10 +32,17 @@
                                                 echo "active";
                                             }  ?> " href="#">Home</a>
                     </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link <?php if ($nav == "informasi") {
-                                                echo "active";
-                                            }  ?>" href="#">Informasi</a>
+                    <li class="nav-item mx-2 dropdown">
+                        <a id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" class="nav-link dropdown-toggle 
+                        <?php if ($nav == "informasi") {
+                            echo "active";
+                        }  ?>" href="#">
+                            Informasi</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Informasi Layanan</a></li>
+                            <li><a class="dropdown-item" href="#">Pengarsipan Buku Tanah</a></li>
+
+                        </ul>
                     </li>
                     <li class="nav-item mx-2">
                         <a class="nav-link <?php if ($nav == "kontak") {
