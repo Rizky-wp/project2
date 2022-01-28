@@ -20,20 +20,21 @@
 <body>
     <!-- navbar section -->
     <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+        <div class="container-fluid d-flex">
+            <a class="navbar-brand flex-grow-1" href="#">
                 <img src="/img/brand.png" alt="Kementrian Agraria dan Tata Ruang / Badan Pertanahan Nasional" height="75">
 
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse justify-content-end fs-4" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item mx-2">
                         <a class="nav-link <?php if ($nav == "home") {
                                                 echo "active";
-                                            }  ?> " href="#">Home</a>
+                                            }  ?> " href="<?= base_url('/') ?>">Home</a>
                     </li>
                     <li class="nav-item mx-2 dropdown">
                         <a id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" class="nav-link dropdown-toggle 
@@ -52,11 +53,23 @@
                                                 echo "active";
                                             }  ?>" href="<?= base_url('/kontak') ?>">Kontak</a>
                     </li>
-                    <li class="nav-item mx-2">
-                        <a href="<?= base_url('/login') ?>" class="nav-link">Login</a>
-                    </li>
+                    <?php session();
+                    if (!isset($_SESSION['name'])) {
+                        echo '<li class="nav-item mx-2">
+                        <a href=' . base_url("/login") . ' class="nav-link">Login</a>
+                    </li>';
+                    } ?>
+
                 </ul>
             </div>
+            <?php session();
+            if (isset($_SESSION['name'])) {
+                echo '<a id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" class="nav-link dropdown-toggle" href=' . base_url("/login") . '>Admin</a><ul class="dropdown-menu " aria-labelledby="navbarDropdown"><li><a class="dropdown-item" href="#">Pengarsipan</a></li><li class="border-top border-dark mt-2"><a class="dropdown-item" href=' . base_url("/login/logout") . '>Logout</a></li>
+
+            </ul>';
+            } ?>
+
+
         </div>
     </nav>
     <!-- end navbar section -->

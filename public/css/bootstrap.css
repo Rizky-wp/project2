@@ -3550,7 +3550,7 @@ textarea.form-control-lg {
 }
 .dropdown-menu[data-bs-popper] {
   top: 100%;
-  left: 0;
+  right: 0;
   margin-top: 0.125rem;
 }
 
@@ -3931,7 +3931,7 @@ textarea.form-control-lg {
   }
 }
 .nav-link:hover, .nav-link:focus {
-  color: #0a58ca;
+  color: #FEC32F;
 }
 .nav-link.disabled {
   color: #6c757d;

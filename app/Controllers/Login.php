@@ -31,7 +31,7 @@ class Login extends BaseController
 
         if (($username == $Database['username']) && ($pass == $Database['password'])) {
             $_SESSION['name'] = $username;
-            return redirect()->to(base_url());;
+            return redirect()->to(base_url());
         } else {
             $data = [
                 'pesan' => 'gagal',
@@ -43,5 +43,13 @@ class Login extends BaseController
 
         // dd($data);
         // return view('login');
+    }
+    public function logout()
+    {
+        session();
+        unset($_SESSION['name']);
+
+
+        return redirect()->to(base_url());
     }
 }
