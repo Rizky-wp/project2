@@ -19,7 +19,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="/img/brand.png" alt="Kementrian Agraria dan Tata Ruang / Badan Pertanahan Nasional" height="100">
+                <img src="/img/brand.png" alt="Kementrian Agraria dan Tata Ruang / Badan Pertanahan Nasional" height="75">
 
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,13 +30,13 @@
                     <li class="nav-item mx-2">
                         <a class="nav-link <?php if ($nav == "home") {
                                                 echo "active";
-                                            }  ?> " href="#">Home</a>
+                                            }  ?> " href="#" style="color: #FEC32F;">Home</a>
                     </li>
                     <li class="nav-item mx-2 dropdown">
                         <a id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" class="nav-link dropdown-toggle 
                         <?php if ($nav == "informasi") {
                             echo "active";
-                        }  ?>" href="#">
+                        }  ?>" href="#" style="color: #FEC32F;">
                             Informasi</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="#">Informasi Layanan</a></li>
@@ -47,10 +47,10 @@
                     <li class="nav-item mx-2">
                         <a class="nav-link <?php if ($nav == "kontak") {
                                                 echo "active";
-                                            }  ?>" href="#">Kontak</a>
+                                            }  ?>" href="#" style="color: #FEC32F;">Kontak</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a href="" class="nav-link">Login</a>
+                        <a href="" class="nav-link" style="color: #FEC32F;">Login</a>
                     </li>
                 </ul>
             </div>
@@ -65,7 +65,7 @@
     <!-- footer section -->
 
     <footer class="footer border-top mb-0 pb-0">
-        <div class="container-fluid px-5 ">
+        <div class="container-fluid px-5 h-50">
             <div class="row row-cols-1 row-cols-lg-2 py-4 mt-2 justify-content-between align-items-center">
                 <div class="col col-lg-6 col-md-6 col-sm-5 mb-3">
                     <div class="row">
@@ -93,7 +93,7 @@
                         <li class="nav-item mb-2"><a class="nav-link p-0 ">Email:<br>
                                 Pengarsipanbukutanahtasikmalaya@yahoo.com</a></li>
                         <li class="nav-item mb-2"><a class="nav-link p-0 ">Hubungi Kami:<br>
-                                021-29653300</a></li>
+                                0265-323267</a></li>
                     </ul>
                 </div>
 

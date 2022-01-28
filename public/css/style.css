@@ -9,11 +9,16 @@ body{
 }
 .navbar{
     background: #003E69;
+    height: 100px;
     
 }
 .nav-link {
     color: #FEC32F ;
     
+}
+.navbar a
+{
+    font-size:large;
 }
 
 .nav-link:hover{
@@ -37,8 +42,6 @@ body{
     background: #003E69;
     font-family: "Rubik", sans-serif;
     font-style: normal;
-    
-    
     color: #FEC32F;
 }
 /* end footer section */
