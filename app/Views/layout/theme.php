@@ -20,7 +20,7 @@
 <body>
     <!-- navbar section -->
     <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid d-flex">
+        <div class="container-fluid d-flex justify-content-end">
             <a class="navbar-brand flex-grow-1" href="#">
                 <img src="/img/brand.png" alt="Kementrian Agraria dan Tata Ruang / Badan Pertanahan Nasional" height="75">
 
@@ -64,7 +64,7 @@
             </div>
             <?php session();
             if (isset($_SESSION['name'])) {
-                echo '<a id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" class="nav-link dropdown-toggle" href=' . base_url("/login") . '>Admin</a><ul class="dropdown-menu " aria-labelledby="navbarDropdown"><li><a class="dropdown-item" href="#">Pengarsipan</a></li><li class="border-top border-dark mt-2"><a class="dropdown-item" href=' . base_url("/login/logout") . '>Logout</a></li>
+                echo '<a id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" class="nav-link dropdown-toggle " href=' . base_url("/login") . '>Admin</a><ul class="dropdown-menu " aria-labelledby="navbarDropdown"><li><a class="dropdown-item" href="#">Pengarsipan</a></li><li class="border-top border-dark mt-2"><a class="dropdown-item" href=' . base_url("/login/logout") . '>Logout</a></li>
 
             </ul>';
             } ?>
