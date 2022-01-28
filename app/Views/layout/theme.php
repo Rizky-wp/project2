@@ -30,13 +30,13 @@
                     <li class="nav-item mx-2">
                         <a class="nav-link <?php if ($nav == "home") {
                                                 echo "active";
-                                            }  ?> " href="#" style="color: #FEC32F;">Home</a>
+                                            }  ?> " href="#">Home</a>
                     </li>
                     <li class="nav-item mx-2 dropdown">
                         <a id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" class="nav-link dropdown-toggle 
                         <?php if ($nav == "informasi") {
                             echo "active";
-                        }  ?>" href="#" style="color: #FEC32F;">
+                        }  ?>" href="#">
                             Informasi</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="#">Informasi Layanan</a></li>
@@ -47,10 +47,10 @@
                     <li class="nav-item mx-2">
                         <a class="nav-link <?php if ($nav == "kontak") {
                                                 echo "active";
-                                            }  ?>" href="#" style="color: #FEC32F;">Kontak</a>
+                                            }  ?>" href="#">Kontak</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a href="" class="nav-link" style="color: #FEC32F;">Login</a>
+                        <a href="" class="nav-link">Login</a>
                     </li>
                 </ul>
             </div>

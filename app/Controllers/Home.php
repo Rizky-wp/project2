@@ -15,6 +15,6 @@ class Home extends BaseController
 
     public function login()
     {
-        return view('login', $data);
+        return view('login');
     }
 }
