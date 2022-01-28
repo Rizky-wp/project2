@@ -2,14 +2,16 @@
     .content .kontak{
         height: 50vh;
     }
-    
+    .login {
+        width: 50%;
+    }
 }
 @media (min-width: 1200px) {
     .content .kontak{
         height: 75vh;
     }
     .login {
-        width: 50%;
+        width: 30%;
     }
 }
 @media (max-width: 1120px) {}
