@@ -25,4 +25,8 @@ class Home extends BaseController
         ];
         return view('kontak', $data);
     }
+    public function admin()
+    {
+        return view('layout/admin');
+    }
 }
