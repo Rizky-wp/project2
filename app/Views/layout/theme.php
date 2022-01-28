@@ -80,9 +80,9 @@
 
     <!-- footer section -->
 
-    <footer class="footer border-top mb-0 pb-0">
-        <div class="container-fluid px-5 h-50">
-            <div class="row row-cols-1 row-cols-lg-2 py-4 mt-2 justify-content-between align-items-center">
+    <footer class="footer border-top mb-0 pb-0 ">
+        <div class="container-fluid px-5 ">
+            <div class="row row-cols-1 row-cols-lg-2 py-3 mt-2 justify-content-between align-items-center">
                 <div class="col col-lg-6 col-md-6 col-sm-5 mb-3">
                     <div class="row">
                         <span class="fs-2">Pengarsipan Buku Tanah Kantor Pertanahan kota Tasikmalaya</span>
@@ -116,7 +116,7 @@
 
             </div>
 
-            <div class="row justify-content-center  py-3">
+            <div class="row justify-content-center  pb-3 ">
                 <span class="text-center" style="color: white;">Copyright © 2022 Badan Pertanahan Nasional- All right reserved</span>
             </div>
         </div>
