@@ -10,14 +10,14 @@
     <link href="/css/bootstrap.css" rel="stylesheet">
     <!-- style css -->
     <link href="/css/style.css" rel="stylesheet">
-
+    <link href="/css/responsive.css" rel="stylesheet">
     <title>Cateringku</title>
 </head>
 
-<body>
+<body style="background:linear-gradient(rgba(0, 0, 0, 0.219), rgba(0, 0, 0, 0.219)), url('/img/bg.jpg');background-size: cover; background-repeat: no-repeat; background-position: center; ">
     <div class="container-fluid d-flex justify-content-center align-items-center" style="height: 100vh;">
 
-        <div class="container login d-flex justify-content-center w-50 align-items-center " style="height: 60%; border-radius: 50px; background-color: rgba(255, 255, 255, 0.609);">
+        <div class="container login d-flex justify-content-center  align-items-center p-5" style=" border-radius: 50px; background-color: rgba(255, 255, 255, 0.609);">
 
             <form class="form-login " method="POST" action="<?= base_url('/login/submit') ?>">
 
@@ -29,24 +29,27 @@
                 <div class="form-group my-3">
                     <input type="password" class="form-control" name="password" placeholder="Password" required>
                 </div>
-                <button type="submit" name="submit" id="submit" class="btn btn-primary btn-block  my-3">Login</button>
+                <div class="d-flex justify-content-center">
+                    <button type="submit" name="submit" id="submit" class="btn btn-primary btn-block  my-3 ">Login</button>
+                </div>
+
                 <?php
                 if (isset($pesan)) {
                     if ($pesan == "gagal") {
-                        echo "<div class='alert' style =' background: red;
-            color: white;
-            font-weight :bold;
-            font-size :22px;
-            padding: 10px;
-            padding-left: 20px;
-            padding-right: 20px;
-            text-align: center;'>Username dan Password tidak sesuai !</div>";
+                        echo '<div class="alert alert-danger text-center" role="alert">
+                        Username atau Password salah!
+                        </div>';
                     }
                 }
                 ?>
             </form>
 
+
+
+
+
         </div>
+
     </div>
 
 
