@@ -1,6 +1,6 @@
 @media (max-width: 1300px) {
     .content .kontak{
-        height: 50vh;
+        height: 500px;
     }
     .login {
         width: 50%;
@@ -8,7 +8,7 @@
 }
 @media (min-width: 1200px) {
     .content .kontak{
-        height: 75vh;
+        height: 250px;
     }
     .login {
         width: 30%;
@@ -22,12 +22,18 @@
 }
 
 @media (max-width: 767px) {
-  
+    .content .kontak{
+        height: 300px;
+    }
 }
 
 @media (max-width: 576px) {
     .content .kontak{
-        height: 35vh;
+        height: 300px;
+    }
+    .visi
+    {
+        font-size: 20px;
     }
     .login {
         width: 75%;
@@ -40,8 +46,9 @@
 
 @media (max-width: 420px) {
     .content .kontak{
-        height: 25vh;
+        height: 250px;
     }
+    
 }
 
 @media (max-width: 376px) {
