@@ -11,6 +11,9 @@
 
     <!-- style css -->
     <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/responsive.css" rel="stylesheet">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/714401f9e2.js" crossorigin="anonymous"></script>
     <title>Dashboard</title>
 </head>
 
@@ -47,10 +50,10 @@
                     <li class="nav-item mx-2">
                         <a class="nav-link <?php if ($nav == "kontak") {
                                                 echo "active";
-                                            }  ?>" href="#">Kontak</a>
+                                            }  ?>" href="<?= base_url('/kontak') ?>">Kontak</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a href="" class="nav-link">Login</a>
+                        <a href="<?= base_url('/login') ?>" class="nav-link">Login</a>
                     </li>
                 </ul>
             </div>
