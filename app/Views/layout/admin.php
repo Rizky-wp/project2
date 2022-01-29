@@ -8,8 +8,9 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/admin.css">
 
-    <title>Hello, world!</title>
+    <title>Admin</title>
 </head>
 
 <body>
@@ -17,27 +18,21 @@
         <!-- Sidebar Holder -->
         <nav id="sidebar" class="visible h-100">
             <div class="d-flex flex-column h-100">
-                <div class="sidebar-header mb-5">
-                    <img src="../img/avatar2.png">
+                <span class="mx-auto mt-5 fs-3" style="text-align: center; font-weight:bold; color:#FEC32F">Arsip Buku <br>Tanah</span>
+                <div class="sidebar-header mb-5 mt-0">
+                    <img src="/img/brandMini.png">
                 </div>
                 <div>
-                    <ul class="list-unstyled components">
+                    <ul class="menu_admin list-unstyled components">
                         <!-- <li class="active">
                 
                 </li> -->
                         <li>
-                            <a href="../Pages/admin"><i class="far fa-user lg" style="padding-right: 20px;"></i>Data User</a>
+                            <a href=""><i class=" far fa-user lg" style="padding-right: 20px;"></i>Input Data Tanah</a>
                         </li>
                         <li>
-                            <a href="../Pages/order_masuk"><i class="fas fa-cart-arrow-down lg" style="padding-right: 20px;"></i>Order Masuk</a>
+                            <a href=""><i class="fas fa-cart-arrow-down lg" style="padding-right: 20px;"></i>Data Tanah</a>
                         </li>
-                        <li>
-                            <a href="../Pages/transaction.php"><i class="far fa-handshake lg" style="padding-right: 20px;"></i>Transaction</a>
-                        </li>
-                        <li>
-                            <a href="../Pages/input_menu.php"><i class="fas fa-shopping-basket lg" style="padding-right: 20px;"></i>Input Menu</a>
-                        </li>
-
                     </ul>
                 </div>
             </div>
@@ -57,17 +52,6 @@
                         <a href="PHP/logout.php">Logout</a>
                     </div>
             </nav>
-            <div class="container-fluid">
-                <table class="table table-dark table-hover text-center">
-                    <thead>
-                        <tr>
-                            <th scope="col">Username</th>
-                            <th scope="col">Email</th>
-                            <th scope="col">Password</th>
-                        </tr>
-                    </thead>
-                </table>
-            </div>
         </div>
 
         <!-- Optional JavaScript; choose one of the two! -->
