@@ -36,6 +36,8 @@ $routes->add('/kontak', 'Home::kontak');
 $routes->add('/admin', 'Admin::index', ['filter' => 'auth']);
 $routes->add('/admin/input', 'Admin::input', ['filter' => 'auth']);
 $routes->add('/admin/dataTanah', 'Admin::dataTanah', ['filter' => 'auth']);
+$routes->add('/informasi', 'Home::informasi');
+
 $routes->add('/login', 'Login::index');
 $routes->add('/login/submit', 'Login::submit');
 $routes->add('/login/logout', 'Login::logout');
