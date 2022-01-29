@@ -7,10 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="/css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/admin.css">
-
+    <?= $this->renderSection('css'); ?>
     <title>Admin</title>
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -28,10 +30,10 @@
                 
                 </li> -->
                         <li>
-                            <a href=""><i class=" far fa-user lg" style="padding-right: 20px;"></i>Input Data Tanah</a>
+                            <a href="<?= base_url('/admin/input') ?>"><i class=" far fa-user lg"></i>Input Data Tanah</a>
                         </li>
                         <li>
-                            <a href=""><i class="fas fa-cart-arrow-down lg" style="padding-right: 20px;"></i>Data Tanah</a>
+                            <a href="<?= base_url('/admin/dataTanah') ?>"><i class="fas fa-cart-arrow-down lg"></i>Data Tanah</a>
                         </li>
                     </ul>
                 </div>
@@ -42,24 +44,24 @@
         <!-- Page Content Holder -->
         <div id="content" class="visible">
             <nav class="navbar sticky-top navbar-light">
-                <div class="d-flex w-100 align-items-center mx-1">
+                <div class="d-flex w-100 align-items-center justify-content-between mx-1">
                     <div id="btn-sidebar">
                         <span></span>
                         <span></span>
                         <span></span>
                     </div>
-                    <div class="log">
-                        <a href="PHP/logout.php">Logout</a>
+                    <div class="">
+                        <a href="<?= base_url('/login/logout') ?>">Logout</a>
                     </div>
             </nav>
+            <!-- content section -->
+            <?= $this->renderSection('content'); ?>
+            <!-- end content section -->
         </div>
 
-        <!-- Optional JavaScript; choose one of the two! -->
 
-        <!-- Option 1: Bootstrap Bundle with Popper -->
 
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script>
+        <script type="text/javascript">
             $(document).ready(function() {
                 $('#btn-sidebar').on('click', function() {
                     $('#sidebar').toggleClass('visible');
@@ -67,17 +69,16 @@
                 });
             });
         </script>
-
+        <!-- script section -->
+        <?= $this->renderSection('script'); ?>
+        <!-- end script section -->
         <!-- Optional JavaScript; choose one of the two! -->
 
         <!-- Option 1: Bootstrap Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="/js/bootstrap.bundle.min.js"></script>
 
-        <!-- Option 2: Separate Popper and Bootstrap JS -->
-        <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
+
+
 </body>
 
 </html>
