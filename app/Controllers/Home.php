@@ -18,6 +18,7 @@ class Home extends BaseController
     {
         return view('login');
     }
+
     public function kontak()
     {
         $data = [
@@ -28,5 +29,13 @@ class Home extends BaseController
     public function admin()
     {
         return view('layout/admin');
+    }
+
+    public function informasi()
+    {
+        $data = [
+            'nav' => "informasi",
+        ];
+        return view('informasi', $data);
     }
 }
