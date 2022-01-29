@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 28 Jan 2022 pada 19.24
--- Versi server: 10.4.22-MariaDB
--- Versi PHP: 8.1.2
+-- Generation Time: Jan 29, 2022 at 06:07 PM
+-- Server version: 10.4.11-MariaDB
+-- PHP Version: 7.4.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `admin`
+-- Table structure for table `admin`
 --
 
 CREATE TABLE `admin` (
@@ -33,7 +33,7 @@ CREATE TABLE `admin` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `admin`
+-- Dumping data for table `admin`
 --
 
 INSERT INTO `admin` (`username`, `password`) VALUES
@@ -42,11 +42,10 @@ INSERT INTO `admin` (`username`, `password`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `data_tanah`
+-- Table structure for table `data_tanah`
 --
 
 CREATE TABLE `data_tanah` (
-  `no` varchar(20) NOT NULL,
   `nama` varchar(100) NOT NULL,
   `no_surat` int(5) NOT NULL,
   `no_hak_milik` varchar(100) NOT NULL,
@@ -57,17 +56,27 @@ CREATE TABLE `data_tanah` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
+-- Dumping data for table `data_tanah`
+--
+
+INSERT INTO `data_tanah` (`nama`, `no_surat`, `no_hak_milik`, `luas`, `no_berkas`, `dftr_isian`, `tgl_arsip`) VALUES
+('test', 1, 'test', 2, 'awdwa', 'wadawd', '2022-01-29'),
+('wad', 3, 'wad', 6, 'wadwa', 'wad', '2022-01-29'),
+('test', 4, 'test', 5, 'test', 'test', '2022-01-29'),
+('wadwa', 6, 'wad', 1, 'wad', 'wad', '2022-01-29');
+
+--
 -- Indexes for dumped tables
 --
 
 --
--- Indeks untuk tabel `admin`
+-- Indexes for table `admin`
 --
 ALTER TABLE `admin`
   ADD PRIMARY KEY (`username`);
 
 --
--- Indeks untuk tabel `data_tanah`
+-- Indexes for table `data_tanah`
 --
 ALTER TABLE `data_tanah`
   ADD PRIMARY KEY (`no_surat`);
