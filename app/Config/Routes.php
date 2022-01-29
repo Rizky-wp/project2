@@ -33,10 +33,14 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 $routes->add('/kontak', 'Home::kontak');
+$routes->add('/informasi', 'Home::informasi');
+
 $routes->add('/admin', 'Admin::index', ['filter' => 'auth']);
 $routes->add('/admin/input', 'Admin::input', ['filter' => 'auth']);
 $routes->add('/admin/dataTanah', 'Admin::dataTanah', ['filter' => 'auth']);
-$routes->add('/informasi', 'Home::informasi');
+$routes->add('/admin/update', 'Admin::update', ['filter' => 'auth']);
+$routes->add('/admin/data', 'Admin::data', ['filter' => 'auth']);
+$routes->add('/admin/delete', 'Admin::delete', ['filter' => 'auth']);
 
 $routes->add('/login', 'Login::index');
 $routes->add('/login/submit', 'Login::submit');

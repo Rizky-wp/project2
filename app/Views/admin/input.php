@@ -9,11 +9,12 @@
             </div>
         </div>
         <div class="row">
-            <div class="col p-5 ">
+            <div class="col p-3 ">
                 <?php
-                if (isset($pesan)) {
-                    if ($pesan == "berhasil") {
-                        echo '<div class="alert alert-alert-success text-center" role="alert">
+                session();
+                if (isset($_SESSION['pesan'])) {
+                    if ($_SESSION['pesan'] == "berhasil") {
+                        echo '<div class="alert alert-success text-center" role="alert">
                         Data Berhasil Ditambahkan!
                         </div>';
                     }
@@ -32,8 +33,8 @@
         ?>
         <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
         <div class="row">
-            <div class="col">
-                <div class="container-sm">
+            <div class="col ">
+                <div class="container ">
                     <form method="POST" action="<?= base_url('/admin/submit') ?>">
                         <div class="mb-5">
                             <label for="nama" class="form-label">Nama</label>
