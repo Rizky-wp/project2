@@ -62,14 +62,14 @@ class Admin extends BaseController
         ];
 
         // set offset
-        if ($this->request->getVar('start') > 0) {
-            $offset = $this->request->getVar('start') + $this->request->getVar('length');
-        } else {
-            $offset = 0;
-        }
+        // if ($this->request->getVar('start') > 0) {
+        //     $offset = $this->request->getVar('start') + $this->request->getVar('length');
+        // } else {
+        //     $offset = 0;
+        // }
 
         // 
-        $data = $adminModel->orLike($search)->findAll($this->request->getVar('length'), $offset);
+        $data = $adminModel->orLike($search)->findAll($this->request->getVar('length'), $this->request->getVar('start'));
         $data1 = [];
         $akses = "<center><a href='#' class='h-75 btn btn-warning btn-circle shadow-sm tampilUpdate'data-id=''><i class='fas fa-feather-alt'></i></a> | <a  href='#' class='btn btn-danger btn-circle shadow-sm tampilDelete'><i class='fas fa-trash'></i></a> <center>";
         foreach ($data as $key) {
@@ -87,7 +87,7 @@ class Admin extends BaseController
         $output = [
             "draw" => $this->request->getVar('draw'),
             "recordsTotal" => count($adminModel->findAll()),
-            "recordsFiltered" => count($data),
+            "recordsFiltered" => count($adminModel->orLike($search)->findAll()),
             "data" => $data1,
         ];
         // dd($output);
