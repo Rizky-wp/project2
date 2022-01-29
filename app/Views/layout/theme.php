@@ -51,7 +51,7 @@
                     <li class="nav-item mx-2">
                         <a class="nav-link <?php if ($nav == "kontak") {
                                                 echo "active";
-                                            }  ?>" href="<?= base_url('/kontak') ?>">Kontak</a>
+                                            }  ?>" href="<?= base_url('kontak') ?>">Kontak</a>
                     </li>
                     <?php session();
                     if (!isset($_SESSION['name'])) {
@@ -64,7 +64,7 @@
             </div>
             <?php session();
             if (isset($_SESSION['name'])) {
-                echo '<a id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" class="nav-link dropdown-toggle " href=' . base_url("/login") . '>Admin</a><ul class="dropdown-menu " aria-labelledby="navbarDropdown"><li><a class="dropdown-item" href="#">Pengarsipan</a></li><li class="border-top border-dark mt-2"><a class="dropdown-item" href=' . base_url("/login/logout") . '>Logout</a></li>
+                echo '<a id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" class="nav-link dropdown-toggle " href=' . base_url("/login") . '>Admin</a><ul class="dropdown-menu " aria-labelledby="navbarDropdown"><li><a class="dropdown-item" href=' . base_url("/admin") . '>Arsip Buku Tanah</a></li><li class="border-top border-dark mt-2"><a class="dropdown-item" href=' . base_url("/login/logout") . '>Logout</a></li>
 
             </ul>';
             } ?>

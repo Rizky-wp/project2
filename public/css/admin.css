@@ -167,10 +167,7 @@ a[aria-expanded="true"] {
     margin-left: 250px;
     transition: all 0.7s ease;
 }
-.log
-{
-    margin-left: 93%;
-}
+
 /* Input Menu */
 .login
 {
@@ -209,3 +206,15 @@ color: white;
 {
     text-align: center;
 }
+/* input section */
+.content .container .row .col .judul{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 41px;
+
+    color: #003E69;
+
+
+}
+/* end input section */
