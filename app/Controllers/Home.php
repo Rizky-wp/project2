@@ -49,6 +49,29 @@ class Home extends BaseController
     }
     public function data()
     {
+        // column
+        $column = [
+            'nama',
+            'no_surat',
+            'no_hak_milik',
+            'luas',
+            'no_berkas',
+            'dftr_isian',
+            'tgl_arsip',
+        ];
+
+        if ($this->request->getVar('order[0][column]') != null) {
+            $index = $this->request->getVar('order[0][column]');
+
+            $order = $this->request->getVar('order[0][dir]');
+        } else {
+            $index = 0;
+            $order = 'asc';
+        }
+
+
+
+
         // deklarasi model
         $adminModel = new AdminModel();
 
@@ -71,7 +94,7 @@ class Home extends BaseController
         // }
 
         // 
-        $data = $adminModel->orLike($search)->findAll($this->request->getVar('length'), $this->request->getVar('start'));
+        $data = $adminModel->orLike($search)->orderBy($column[$index], $order)->findAll($this->request->getVar('length'), $this->request->getVar('start'));
         $data1 = [];
 
         foreach ($data as $key) {
@@ -90,6 +113,8 @@ class Home extends BaseController
             "recordsTotal" => count($adminModel->findAll()),
             "recordsFiltered" => count($adminModel->orLike($search)->findAll()),
             "data" => $data1,
+            "index" => $index,
+            "order" => $order
         ];
         // dd($output);
 
