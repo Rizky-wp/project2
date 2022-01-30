@@ -19,8 +19,8 @@ class Login extends BaseController
         // load session
         session();
         // get post form login
-        $username = $this->request->getVar('username', FILTER_SANITIZE_STRING);
-        $pass = $this->request->getVar('password', FILTER_SANITIZE_STRING);
+        $username = htmlspecialchars($this->request->getVar('username'));
+        $pass = htmlspecialchars($this->request->getVar('password'));
         // encryption
         $username = base64_encode($username);
         $pass = base64_encode($pass);
