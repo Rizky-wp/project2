@@ -118,7 +118,7 @@
             </div>
 
             <div class="row justify-content-center">
-                <span class="text-center" style="color: white; font-size:x-small">Copyright © 2022 Badan Pertanahan Nasional- All right reserved</span>
+                <span class="text-center" style="color: white; font-size:x-small">Copyright © <?= date('Y'); ?> Badan Pertanahan Nasional- All right reserved</span>
             </div>
         </div>
 
