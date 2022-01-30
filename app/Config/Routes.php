@@ -34,6 +34,8 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Home::index');
 $routes->add('/kontak', 'Home::kontak');
 $routes->add('/informasi', 'Home::informasi');
+$routes->add('/Buku-Tanah', 'Home::bukuTanah');
+// $routes->add('/data', 'Home::data');
 
 $routes->add('/admin', 'Admin::index', ['filter' => 'auth']);
 $routes->add('/admin/input', 'Admin::input', ['filter' => 'auth']);

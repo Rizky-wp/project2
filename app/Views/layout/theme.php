@@ -14,10 +14,11 @@
     <link href="/css/responsive.css" rel="stylesheet">
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/714401f9e2.js" crossorigin="anonymous"></script>
+    <?= $this->renderSection('css'); ?>
     <title>Dashboard</title>
 </head>
 
-<body>
+<body class="d-flex flex-column">
     <!-- navbar section -->
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid d-flex justify-content-end">
@@ -43,8 +44,8 @@
                         }  ?>" href="#">
                             Informasi</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Informasi Layanan</a></li>
-                            <li><a class="dropdown-item" href="#">Pengarsipan Buku Tanah</a></li>
+                            <li><a class="dropdown-item" href="<?= base_url('/informasi') ?>">Informasi Layanan</a></li>
+                            <li><a class="dropdown-item" href="<?= base_url('/Buku-Tanah') ?>">Pengarsipan Buku Tanah</a></li>
 
                         </ul>
                     </li>
@@ -80,8 +81,8 @@
 
     <!-- footer section -->
 
-    <footer class="footer border-top mb-0 pb-0 ">
-        <div class="footer container-fluid px-4 ">
+    <footer class="footer border-top mb-0 pb-0 mt-auto">
+        <div class=" container-fluid px-4 ">
             <div class="row row-cols-1 row-cols-lg-2 py-3 mt-2 justify-content-between align-items-center">
                 <div class="col col-lg-6 col-md-6 col-sm-5 mb-3">
                     <div class="row">
@@ -123,6 +124,7 @@
 
     </footer>
 
+
     <!-- end footer section -->
 
 
@@ -134,7 +136,7 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script type="text/javascript" src="/js/bootstrap.bundle.min.js"></script>
-
+    <?= $this->renderSection('script'); ?>
 </body>
 
 </html>

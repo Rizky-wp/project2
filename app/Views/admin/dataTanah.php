@@ -46,7 +46,7 @@
     </div>
 
 
-    </div>
+
 </section>
 <!-- Modal -->
 <div class="modal fade" id="formUpdate" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -123,7 +123,7 @@
         myTable = $('#myTable').DataTable({
             // paging: false,
             responsive: true,
-            pageLength: 2,
+            pageLength: 10,
             // data: data,
             lengthChange: false,
             processing: true,
