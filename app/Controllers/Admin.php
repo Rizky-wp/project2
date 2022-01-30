@@ -25,12 +25,12 @@ class Admin extends BaseController
         // model
         $adminModel = new AdminModel();
         // get post form input
-        $name = $this->request->getVar('nama', FILTER_SANITIZE_STRING);
+        $name = htmlspecialchars($this->request->getVar('nama'));
         $noSurat = $this->request->getVar('noSurat', FILTER_SANITIZE_NUMBER_FLOAT);
-        $noHakMilik = $this->request->getVar('noHakMilik', FILTER_SANITIZE_STRING);
+        $noHakMilik = htmlspecialchars($this->request->getVar('noHakMilik'));
         $luas = $this->request->getVar('luas', FILTER_SANITIZE_NUMBER_FLOAT);
-        $noBerkas = $this->request->getVar('noBerkas', FILTER_SANITIZE_STRING);
-        $daftarIsian = $this->request->getVar('daftarIsian', FILTER_SANITIZE_STRING);
+        $noBerkas = htmlspecialchars($this->request->getVar('noBerkas'));
+        $daftarIsian = htmlspecialchars($this->request->getVar('daftarIsian'));
 
         // insert database
         $adminModel->insert([
