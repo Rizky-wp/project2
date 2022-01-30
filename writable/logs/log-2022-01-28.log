@@ -1,0 +1,137 @@
+ERROR - 2022-01-28 04:53:00 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: NO)
+CRITICAL - 2022-01-28 04:53:00 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+#0 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\Model.php(142): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, 'sArp69b8tmanCkw...')
+#4 C:\xampp\htdocs\project2\app\Controllers\Login.php(29): CodeIgniter\BaseModel->find('sArp69b8tmanCkw...')
+#5 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Login->submit()
+#6 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\project2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2022-01-28 04:53:38 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: NO)
+CRITICAL - 2022-01-28 04:53:38 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+#0 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\Model.php(142): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '/aGZz7sgjsFLn8X...')
+#4 C:\xampp\htdocs\project2\app\Controllers\Login.php(29): CodeIgniter\BaseModel->find('/aGZz7sgjsFLn8X...')
+#5 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Login->submit()
+#6 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\project2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2022-01-28 04:55:15 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2022-01-28 04:55:15 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+#0 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\Model.php(142): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, 'FlWFk6sfmWjMNGB...')
+#4 C:\xampp\htdocs\project2\app\Controllers\Login.php(29): CodeIgniter\BaseModel->find('FlWFk6sfmWjMNGB...')
+#5 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Login->submit()
+#6 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\project2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-28 05:15:48 --> Undefined variable: nav
+#0 C:\xampp\htdocs\project2\app\Views\layout\theme.php(34): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 34, Array)
+#1 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\View\View.php(226): CodeIgniter\View\View->render('layout/theme', Array, true)
+#4 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('home', Array, true)
+#5 C:\xampp\htdocs\project2\app\Controllers\Login.php(34): view('home')
+#6 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Login->submit()
+#7 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\project2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-01-28 06:40:38 --> A non-numeric value encountered
+#0 C:\xampp\htdocs\project2\app\Views\layout\theme.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\xampp\\htdocs...', 65, Array)
+#1 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\View\View.php(226): CodeIgniter\View\View->render('layout/theme', Array, true)
+#4 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('home', Array, true)
+#5 C:\xampp\htdocs\project2\app\Controllers\Home.php(18): view('home', Array)
+#6 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\project2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-01-28 07:01:14 --> Undefined variable: _SESSION
+#0 C:\xampp\htdocs\project2\app\Controllers\Login.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 49, Array)
+#1 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Login->logout()
+#2 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\project2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-28 07:01:57 --> Undefined index: name
+#0 C:\xampp\htdocs\project2\app\Controllers\Home.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Home->index()
+#2 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\project2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-28 07:03:14 --> Undefined index: name
+#0 C:\xampp\htdocs\project2\app\Controllers\Home.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Home->index()
+#2 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\project2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-28 07:04:25 --> Undefined index: name
+#0 C:\xampp\htdocs\project2\app\Controllers\Home.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Home->index()
+#2 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\project2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-28 07:33:17 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\project2\app\Controllers\Login.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 32, Array)
+#1 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Login->submit()
+#2 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\project2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2022-01-28 10:52:39 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2022-01-28 10:52:39 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+#0 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\Model.php(142): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, 'YWRtaW4=')
+#4 C:\xampp\htdocs\project2\app\Controllers\Login.php(30): CodeIgniter\BaseModel->find('YWRtaW4=')
+#5 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Login->submit()
+#6 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\project2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-28 23:36:45 --> Undefined variable: nav
+#0 C:\xampp\htdocs\project2\app\Views\layout\theme.php(35): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\View\View.php(226): CodeIgniter\View\View->render('layout/theme', Array, true)
+#4 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('admin/input', Array, true)
+#5 C:\xampp\htdocs\project2\app\Controllers\Admin.php(10): view('admin/input')
+#6 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Admin->index()
+#7 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\project2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\project2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
