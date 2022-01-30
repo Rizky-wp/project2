@@ -13,7 +13,7 @@ class Auth implements FilterInterface
         // Do something here
         session();
         if (!isset($_SESSION['name'])) {
-            return redirect()->to('/login');
+            return redirect()->to(base_url('/login'));
         }
     }
 
