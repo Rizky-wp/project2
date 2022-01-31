@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link rel="icon" href="https://pengarsipanbukutanahkantorpertanahantasikmalaya.com/img/brandMini.ico" type="image/x-icon">
     <!-- Bootstrap CSS -->
     <link href="/css/bootstrap.css" rel="stylesheet">
 
@@ -15,14 +15,14 @@
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/714401f9e2.js" crossorigin="anonymous"></script>
     <?= $this->renderSection('css'); ?>
-    <title>Dashboard</title>
+    <title><?= $judul; ?></title>
 </head>
 
 <body class="d-flex flex-column">
     <!-- navbar section -->
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid d-flex justify-content-end">
-            <a class="navbar-brand flex-grow-1" href="#">
+            <a class="navbar-brand flex-grow-1" href="<?= base_url('/') ?>">
                 <img src="/img/brand.png" alt="Kementrian Agraria dan Tata Ruang / Badan Pertanahan Nasional" height="75">
 
             </a>

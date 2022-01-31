@@ -11,7 +11,8 @@
     <!-- style css -->
     <link href="/css/style.css" rel="stylesheet">
     <link href="/css/responsive.css" rel="stylesheet">
-    <title>Cateringku</title>
+    <title><?= $judul; ?></title>
+    <link rel="icon" href="https://pengarsipanbukutanahkantorpertanahantasikmalaya.com/img/brandMini.ico" type="image/x-icon">
 </head>
 
 <body style="background:linear-gradient(rgba(0, 0, 0, 0.219), rgba(0, 0, 0, 0.219)), url('/img/bg.jpg');background-size: cover; background-repeat: no-repeat; background-position: center; ">
@@ -21,7 +22,9 @@
 
             <form class="form-login " method="POST" action="<?= base_url('/login/submit') ?>">
 
-                <img src="/img/brandMini.png" class="rounded mx-auto d-block" />
+                <a href="<?= base_url('/'); ?>">
+                    <img src="/img/brandMini.png" class="rounded mx-auto d-block" />
+                </a>
                 <h2 class="text-center">Login Admin</h2>
                 <div class="form-group my-3">
                     <input type="text" class="form-control" name="username" aria-describedby="username" placeholder="username" required>

@@ -10,7 +10,8 @@
     <link href="/css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/admin.css">
 
-    <title>Admin</title>
+    <title><?= $judul; ?></title>
+    <link rel="icon" href="https://pengarsipanbukutanahkantorpertanahantasikmalaya.com/img/brandMini.ico" type="image/x-icon">
     <!-- Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
@@ -26,8 +27,10 @@
         <nav id="sidebar" class="visible h-100">
             <div class="d-flex flex-column h-100">
                 <span class="mx-auto mt-5 fs-3" style="text-align: center; font-weight:bold; color:#FEC32F">Arsip Buku <br>Tanah</span>
-                <div class="sidebar-header mb-5 mt-0">
-                    <img src="/img/brandMini.png">
+                <div class="sidebar-header mb-5 mt-0"><a href="<?= base_url('/') ?>">
+                        <img src="/img/brandMini.png">
+                    </a>
+
                 </div>
                 <div>
                     <ul class="menu_admin list-unstyled components">
@@ -35,10 +38,10 @@
                 
                 </li> -->
                         <li>
-                            <a href="<?= base_url('/admin/input') ?>"><i class=" far fa-user lg"></i>Input Data Tanah</a>
+                            <a href="<?= base_url('/admin/input') ?>">Input Data Tanah</a>
                         </li>
                         <li>
-                            <a href="<?= base_url('/admin/dataTanah') ?>"><i class="fas fa-cart-arrow-down lg"></i>Data Tanah</a>
+                            <a href="<?= base_url('/admin/dataTanah') ?>">Data Tanah</a>
                         </li>
                     </ul>
                 </div>

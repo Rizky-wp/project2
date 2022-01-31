@@ -8,16 +8,24 @@ class Admin extends BaseController
 {
     public function index()
     {
-
-        return view('layout/admin');
+        $data = [
+            'judul' => 'Admin'
+        ];
+        return view('layout/admin', $data);
     }
     public function input()
     {
-        return view('admin/input');
+        $data = [
+            'judul' => 'Admin | Input Data'
+        ];
+        return view('admin/input', $data);
     }
     public function dataTanah()
     {
-        return view('admin/dataTanah');
+        $data = [
+            'judul' => 'Admin | Data Tanah'
+        ];
+        return view('admin/dataTanah', $data);
     }
     public function submit()
     {

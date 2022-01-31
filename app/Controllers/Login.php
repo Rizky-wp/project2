@@ -9,8 +9,10 @@ class Login extends BaseController
 
     public function index()
     {
-
-        return view('login');
+        $data = [
+            'judul' => 'Login',
+        ];
+        return view('login', $data);
     }
     public function submit()
     {
@@ -35,6 +37,7 @@ class Login extends BaseController
         } else {
             $data = [
                 'pesan' => 'gagal',
+                'judul' => 'Login'
             ];
             return view('login', $data);
         }

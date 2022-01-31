@@ -10,33 +10,29 @@ class Home extends BaseController
     {
 
         $data = [
-            'nav' => "home"
+            'nav' => "home",
+            'judul' => "Pengarsipan Buku Tanah Kantor Pertanahan Tasikmalaya"
         ];
         return view('home', $data);
     }
 
 
-    public function login()
-    {
-        return view('login');
-    }
 
     public function kontak()
     {
         $data = [
             'nav' => "kontak",
+            'judul' => "Kontak"
         ];
         return view('kontak', $data);
     }
-    public function admin()
-    {
-        return view('layout/admin');
-    }
+
 
     public function informasi()
     {
         $data = [
             'nav' => "informasi",
+            'judul' => "Informasi"
         ];
         return view('informasi', $data);
     }
@@ -44,6 +40,7 @@ class Home extends BaseController
     {
         $data = [
             'nav' => "informasi",
+            'judul' => "Buku Tanah"
         ];
         return view('bukuTanah', $data);
     }
